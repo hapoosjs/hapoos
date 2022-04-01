@@ -1,2 +1,2 @@
 # hapoos
-Core API definitions and supported cloud provider implementations
+Core interface definitions and supported cloud provider implementations
