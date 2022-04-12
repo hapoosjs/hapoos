@@ -1,2 +1,2 @@
 # hapoos
-Core interface definitions and supported cloud provider implementations
+A progressive platform for developing cloud-native applications

@@ -1,0 +1,7 @@
+{
+  "name": "hapoos",
+  "modules":
+    [
+      { "package": "@hapoosjs/api-buckets", "type": "Buckets" }
+    ]
+}
