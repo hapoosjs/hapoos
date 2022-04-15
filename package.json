@@ -1,10 +1,10 @@
 {
   "name": "hapoos",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A progressive platform for developing cloud-native applications",
   "main": "index.js",
   "scripts": {
-    "build:docs": "ts-documenter api/common api/buckets providers/aws/buckets",
+    "build:docs": "ts-documenter --out ../hapoosjs.github.io/src/api api/common api/buckets providers/aws/buckets",
     "test": "jest"
   },
   "repository": {
@@ -34,7 +34,7 @@
     "api/buckets",
     "providers/aws/buckets"
   ],
-  "devDependencies": {
-    "@nabh/ts-api-extractor": "^1.2.4"
+  "dependencies": {
+    "@nabh/ts-api-extractor": "^1.2.5"
   }
 }

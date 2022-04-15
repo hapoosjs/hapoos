@@ -1,10 +1,10 @@
 const CLICreator = require("@nabh/cli-creator");
 var modules = require("../config/module_configs.json");
 const HapoosFactory = require("./hapoos_factory");
-async function run() {
+async function createCLI(apiMode) {
   var cli = await CLICreator.createMultiModuleCLI(modules, HapoosFactory, null, 
     [["-p, --provider <provider>", "Cloud provider ID"],
-      ["-r, --region <region>", "Default region"]]);
-  await cli.run();
+      ["-r, --region <region>", "Default region"]], apiMode);
+  return cli;
 }
-run();
+module.exports = createCLI;
