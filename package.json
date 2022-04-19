@@ -4,7 +4,7 @@
   "description": "A progressive platform for developing cloud-native applications",
   "main": "index.js",
   "scripts": {
-    "build:docs": "ts-documenter --out ../hapoosjs.github.io/src/api api/common api/buckets providers/aws/buckets",
+    "build:docs": "node bin/gen_api_docs.js ../hapoosjs.github.io/src/api",
     "test": "jest"
   },
   "repository": {
@@ -29,12 +29,12 @@
   },
   "homepage": "https://github.com/hapoosjs/hapoos#readme",
   "workspaces": [
-    "cli",
     "api/common",
     "api/buckets",
     "api/certs",
     "providers/aws/buckets",
-    "providers/aws/certs"
+    "providers/aws/certs",
+    "cli"
   ],
   "dependencies": {
     "@nabh/ts-api-extractor": "^1.2.5"
