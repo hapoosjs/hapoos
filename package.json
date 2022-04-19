@@ -1,10 +1,11 @@
 {
   "name": "hapoos",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A progressive platform for developing cloud-native applications",
   "main": "index.js",
   "scripts": {
     "build:docs": "node bin/gen_api_docs.js ../hapoosjs.github.io/src/api",
+    "update": "node bin/update_deps.js",
     "test": "jest"
   },
   "repository": {

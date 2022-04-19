@@ -1,6 +1,6 @@
 {
   "name": "@hapoosjs/cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Command line interface to hapoos.js APIs",
   "main": "index.js",
   "bin": {
@@ -21,18 +21,18 @@
   "author": "Padmanabh Dabke",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.4.0",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^27.5.1",
-    "prettier": "2.5.1",
+    "prettier": "^2.6.2",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@hapoosjs/api-buckets": "^1.0.0",
-    "@hapoosjs/api-certs": "^1.0.0",
-    "@hapoosjs/aws-buckets": "^1.0.0",
-    "@hapoosjs/aws-certs": "^1.0.0",
-    "@nabh/cli-creator": "^1.1.4"
+    "@hapoosjs/api-buckets": "^1.1.1",
+    "@hapoosjs/api-certs": "^1.0.1",
+    "@hapoosjs/aws-buckets": "^1.1.1",
+    "@hapoosjs/aws-certs": "^1.0.1",
+    "@nabh/cli-creator": "^1.1.6"
   }
 }
