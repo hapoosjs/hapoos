@@ -37,6 +37,6 @@
     "cli"
   ],
   "dependencies": {
-    "@nabh/ts-api-extractor": "^1.2.5"
+    "@nabh/ts-api-extractor": "^1.2.6"
   }
 }
