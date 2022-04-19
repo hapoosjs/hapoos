@@ -1,9 +1,9 @@
 {
   "name": "@hapoosjs/cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Command line interface to hapoos.js APIs",
   "main": "index.js",
-  "bin": { 
+  "bin": {
     "hapoos": "bin/hapoos.js"
   },
   "scripts": {
@@ -30,7 +30,9 @@
   },
   "dependencies": {
     "@hapoosjs/api-buckets": "^1.0.0",
+    "@hapoosjs/api-certs": "^1.0.0",
     "@hapoosjs/aws-buckets": "^1.0.0",
+    "@hapoosjs/aws-certs": "^1.0.0",
     "@nabh/cli-creator": "^1.1.4"
   }
 }

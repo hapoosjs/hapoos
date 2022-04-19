@@ -1,7 +1,7 @@
 {
-  "name": "@hapoosjs/api-buckets",
-  "version": "1.1.0",
-  "description": "API for managing cloud buckets",
+  "name": "@hapoosjs/api-certs",
+  "version": "1.0.0",
+  "description": "API for managing SSL certificates",
   "scripts": {
     "build": "npm run clean && index-ts-creator src && npm run build:cjs && npm run build:es && npm run build:types",
     "build:cjs": "tsc -p tsconfig.json",
@@ -17,13 +17,14 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hapoosjs/hapoos.git",
-    "directory": "api/buckets"
+    "directory": "api/certs"
   },
   "bugs": {
     "url": "https://github.com/hapoosjs/hapoos/issues"
   },
   "homepage": "https://github.com/hapoosjs/hapoos#readme",
   "dependencies": {
+    "@aws-sdk/client-acm": "^3.72.0",
     "@hapoosjs/api-common": "^1.1.0"
   },
   "devDependencies": {

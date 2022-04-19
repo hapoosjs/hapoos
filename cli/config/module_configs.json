@@ -3,7 +3,7 @@
   "modules": [
     {
       "name": "buckets",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "providerType": "Buckets",
       "methods": [
         {
@@ -78,6 +78,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -104,6 +110,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -177,6 +189,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -208,6 +226,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -310,6 +334,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": []
@@ -348,6 +378,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -386,6 +422,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -440,6 +482,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -482,6 +530,12 @@
               "comment": "Provider-specific options",
               "isOptional": true,
               "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
             }
           ],
           "params": [
@@ -577,6 +631,126 @@
         }
       ],
       "comment": "Provides methods to manage cloud buckets and stored bojects"
+    },
+    {
+      "name": "certs",
+      "version": "1.0.0",
+      "providerType": "Certs",
+      "methods": [
+        {
+          "name": "deleteCert",
+          "isAsync": true,
+          "comment": "Delete certificate",
+          "params": [
+            {
+              "name": "certId",
+              "comment": "Certificate ID",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "getCert",
+          "isAsync": true,
+          "comment": "Get issued certificate",
+          "params": [
+            {
+              "name": "certId",
+              "comment": "Certificate ID",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "getCertMetadata",
+          "isAsync": true,
+          "comment": "Get certificate metadata.",
+          "params": [
+            {
+              "name": "certId",
+              "comment": "Certificate ID",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "name": "listCerts",
+          "isAsync": true,
+          "comment": "List certificates",
+          "options": [
+            {
+              "name": "statuses",
+              "comment": "Limit returned certificates to specified statuses",
+              "isOptional": true,
+              "type": "string[]"
+            },
+            {
+              "name": "maxItems",
+              "comment": "Maximum number of items to be returned",
+              "isOptional": true,
+              "type": "number"
+            },
+            {
+              "name": "start",
+              "comment": "Continuation token that indicates start of the result setto be returned",
+              "isOptional": true,
+              "type": "string"
+            },
+            {
+              "name": "providerOptions",
+              "comment": "Provider-specific options",
+              "isOptional": true,
+              "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
+            }
+          ],
+          "params": []
+        },
+        {
+          "name": "requestCert",
+          "isAsync": true,
+          "comment": "Request a new certificate",
+          "options": [
+            {
+              "name": "altDomains",
+              "comment": "Additional domains included in the certificate",
+              "isOptional": true,
+              "type": "string[]"
+            },
+            {
+              "name": "validationMethod",
+              "comment": "Domain validation method: EMAIL or DNS",
+              "isOptional": true,
+              "type": "string"
+            },
+            {
+              "name": "providerOptions",
+              "comment": "Provider-specific options",
+              "isOptional": true,
+              "type": "any"
+            },
+            {
+              "name": "region",
+              "comment": "Default region for bucket creation and access",
+              "isOptional": true,
+              "type": "string"
+            }
+          ],
+          "params": [
+            {
+              "name": "domain",
+              "comment": "Primary domain for the certificate",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "comment": "Provides methods to manage SSL/TLS certificates"
     }
   ]
 }

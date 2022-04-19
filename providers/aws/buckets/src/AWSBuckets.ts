@@ -50,7 +50,6 @@ import {
   Buckets,
   BucketWebsiteConfiguration,
   CreateBucketOptions,
-  CreateBucketsOptions,
   DeleteBucketOptions,
   EncryptionSettings,
   FileVersion,
@@ -60,6 +59,7 @@ import {
   PutFileOptions,
   SetEncryptionOptions,
 } from "@hapoosjs/api-buckets";
+import { BaseOptions } from "@hapoosjs/api-common";
 import { Readable } from "stream";
 import { buffer } from "stream/consumers";
 
@@ -126,7 +126,7 @@ export class AWSBuckets implements Buckets {
     S3Client
   >();
   protected region: string;
-  constructor(options: CreateBucketsOptions) {
+  constructor(options: BaseOptions) {
     this.region = options?.region ? options.region : "us-east-1";
     const input = { region: this.region, useArnRegion: true, maxAttempts: 3 };
     this.client = new S3Client(input);

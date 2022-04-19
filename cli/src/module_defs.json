@@ -2,6 +2,7 @@
   "name": "hapoos",
   "modules":
     [
-      { "package": "@hapoosjs/api-buckets", "type": "Buckets" }
+      { "package": "@hapoosjs/api-buckets", "type": "Buckets" },
+      { "package": "@hapoosjs/api-certs", "type": "Certs" }
     ]
 }

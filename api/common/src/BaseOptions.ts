@@ -9,6 +9,11 @@ export class BaseOptions {
   providerOptions?: any;
 
   /**
+   * Default region for bucket creation and access
+   */
+  region?: string;
+
+  /**
    * Creates <code>BaseOptions</code> instance with given provider options
    * @param options Provider specific options
    */

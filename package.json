@@ -32,7 +32,9 @@
     "cli",
     "api/common",
     "api/buckets",
-    "providers/aws/buckets"
+    "api/certs",
+    "providers/aws/buckets",
+    "providers/aws/certs"
   ],
   "dependencies": {
     "@nabh/ts-api-extractor": "^1.2.5"

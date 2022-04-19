@@ -1,6 +1,6 @@
 /**
  * API for managing cloud buckets
- * @remarks Version 1.0.0
+ * @remarks Version 1.1.0
  *
  * @packageDocumentation
  */
@@ -12,7 +12,6 @@ export * from "./BucketList";
 export * from "./BucketWebsiteConfiguration";
 export * from "./Buckets";
 export * from "./CreateBucketOptions";
-export * from "./CreateBucketsOptions";
 export * from "./DeleteBucketOptions";
 export * from "./EncryptionSettings";
 export * from "./Enums";

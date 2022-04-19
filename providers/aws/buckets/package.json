@@ -1,6 +1,6 @@
 {
   "name": "@hapoosjs/aws-buckets",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AWS implementation of hapoos.js buckets API",
   "scripts": {
     "build": "npm run clean && index-ts-creator src && npm run build:cjs && npm run build:es && npm run build:types",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.55.0",
-    "@hapoosjs/api-buckets": "^1.0.0"
+    "@hapoosjs/api-buckets": "^1.1.0"
   },
   "devDependencies": {
     "@nabh/index-ts-creator": "^1.1.3",

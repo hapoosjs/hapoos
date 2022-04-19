@@ -117,7 +117,16 @@ module.exports = (buckets, provider, publicReadPolicy, region) => {
   test('List files in folder', async () => {
     expect(await countAllFiles(buckets, TEST_FOLDER_NAME, bucket1)).toBe(1);
   });
-  
+
+  test('File list pagination', async () => {
+    let response = await buckets.listFiles(bucket1, { recursive: true, maxItems: 1});
+    let start = response.next;
+    expect(response.files.length).toBe(1);
+    expect(start).toBeTruthy();
+    response = await buckets.listFiles(bucket1, { recursive: true, start: start});
+    expect(response.files.length).toBe(1);
+  });
+
   test('Delete file', async () => {
     expect(await deleteFile(buckets, bucket1)).toBe(1);
   });
