@@ -1,6 +1,6 @@
 {
   "name": "hapoos",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A progressive platform for developing cloud-native applications",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,7 @@
     "api/common",
     "api/buckets",
     "api/certs",
+    "api/dns",
     "providers/aws/buckets",
     "providers/aws/certs",
     "cli"
